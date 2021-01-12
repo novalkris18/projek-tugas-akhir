@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FashionLok</title>
+    <link rel="shortcut icon" href="foto/LogoFL.png">
+    
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .bg {
+            margin: 0;
+            font-family: Verdana, sans-serif; font-size:0.8em;
+            background-image: url("foto/gb_kontak.jpg");
+            height: 50%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        ul {
+            height: 50px;
+            width: 100%;
+            padding: 0px;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        ul li{
+            float: left;
+            line-height: 50px;
+            list-style: none;
+            padding: 1px;
+            width: 130px;
+        }
+
+        ul li a {
+            color: #ccc;
+            text-shadow: 0 0 3px #000;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        .navbar {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .nav {
+            height: 50px;
+            width: 8000px;
+            background-image: linear-gradient(to right, green 0%, blue 20%, red 40%, yellow 60%, green 80%, blue 100%);
+            animation: warna 25s linear infinite;
+        }
+
+        @keyframes warna {
+            0% {
+                transform: translate(-6500px, 0);
+            }
+            20% {
+                transform: translate(-4000px, 0);
+            }
+            50% {
+                transform: translate(-2500px, 0);
+            }
+            75% {
+                transform: translate(-1000px, 0);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        .wrap .sidebar{
+            float: left;	
+            width: 25%;
+            height: 100%;
+        }
+
+        .wrap .content{
+            float: left;
+            height: 300px;
+            width: 75%;
+        }
+    </style>
+</head>
+
+<body class="bg">
+    
+    <ul>
+        <li><a href="index.html">BERANDA</a></li>
+        <li><a href="kategori.html">PRODUK</a></li>
+        <li><a href="contact.html"class="active">LAYANAN</a></li>
+        <li><a href="masuk.html">LOGIN</a></li>
+        <li><a href="daftar.html">REGISTER</a></li>
+    </ul>
+    
+    <div class="navbar">
+        <div class="nav"></div>
+    </div>
+
+    <div style="margin-left:1%;padding:1px 16px;height:1000px;">
+        <div class="wrap">
+            <article>
+                <h2>1. Batik Populo</h2>
+                <div class="sidebar"><img src="foto/Batik Populo.jpg" width="200px" height="250px"></div>
+                <div class="content"> 
+                    <p>Didirikan oleh desainer Bai Soemarlono pada 2013 silam,
+                    Populo Batik menjadi salah satu batik kontemporer yang menjadi favorit para pecinta fashion dan wastra Indonesia.
+                    Semua busana Populo diproduksi secara manual menggunakan tangan dengan motif-motif batik seperti Mega Mendung,
+                    Wadasan dan Grinsing yang telah dimodifikasi.
+                    <a href="https://www.instagram.com/populobatik/?hl=en" style="color: yellow;">Bisa klik disini</a>
+                    </p>
+                    <details>
+                        <summary align="left">Kisaran Harga</summary>
+                        <center>Rp 1.000.000,00 sampai Rp 20.000.000,00</center>   
+                    </details>
+                </div>
+            </article>
+            
+            <article>
+                <h2>2. Batik Keris</h2>
+                <div class="sidebar"><img src="foto/Batik Keris.jpg" width="200px" height="250px"></div>
+                <div class="content">
+                    <p>Batik Keris telah didirikan sejak tahun 1947, tidak heran kalau banyak toko yang telah tersebar di Indonesia.
+                        Sebelumnya, Batik Keris sempat mendirikan sebuah pabrik di Sarinah pada tahun 1972. 
+                        Meski sudah lama berdiri, produk batik siap pakainya tetap terlihat trendi.
+                        <a href="https://batikkerisonline.co.id/" style="color: yellow;">Bisa klik disini</a>
+                    </p>
+                    <details>
+                        <summary align="left">Kisaran Harga</summary>
+                        <center>Rp 250.000,00 sampai Rp 9.064.000,00</center>
+                    </details>
+                </div>
+            </article>
+                
+            <article>
+                <h2>3. Batik Semar</h2>
+                <div class="sidebar"><img src="foto/Batik Semar.jpg" width="200px" height="250px"></div>
+                <div class="content">
+                    <p>Merek batik lokal terkenal ini adalah Batik Semar,
+                       yang telah berhasil mempertahankan eksistensinya sebagai salah satu ciri khas Solo sejak tahun 1966.
+                       <a href="https://www.batik-semar.com/" style="color: yellow;">Bisa klik disini</a>
+                    </p>
+                    <details>
+                        <summary align="left">Kisaran Harga</summary>
+                        <center>Rp 50.000,00 sampai Rp 4.500.000,00</center>
+                    </details>
+                </div>
+            </article>
+        </div>
+       
+        <footer>
+            <p><center><b>UNIVERSITAS DIAN NUSWANTORO</b></center></p>
+        </footer>
+    </div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical_fixed by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:35 GMT -->
+</html>

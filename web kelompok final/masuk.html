@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+    <title>FashionLok</title>
+    <link rel="shortcut icon" href="foto/LogoFL.png">
+    <link rel="stylesheet" href="login.css">
+    
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .bg {
+            margin: 0;
+            font-family: Verdana, sans-serif; font-size:0.8em;
+            background-image: url("foto/gb_kontak.jpg");
+            height: 50%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        ul {
+            height: 50px;
+            width: 100%;
+            padding: 0px;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        ul li{
+            float: left;
+            line-height: 50px;
+            list-style: none;
+            padding: 1px;
+            width: 130px;
+        }
+
+        ul li a {
+            color: #ccc;
+            text-shadow: 0 0 3px #000;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        .navbar {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .nav {
+            height: 50px;
+            width: 8000px;
+            background-image: linear-gradient(to right, green 0%, blue 20%, red 40%, yellow 60%, green 80%, blue 100%);
+            animation: warna 25s linear infinite;
+        }
+
+        @keyframes warna {
+            0% {
+                transform: translate(-6500px, 0);
+            }
+            20% {
+                transform: translate(-4000px, 0);
+            }
+            50% {
+                transform: translate(-2500px, 0);
+            }
+            75% {
+                transform: translate(-1000px, 0);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        .wrap .sidebar{
+            float: left;	
+            width: 25%;
+            height: 100%;
+        }
+
+        .wrap .content{
+            float: left;
+            height: 300px;
+            width: 75%;
+        }
+    </style>
+</head>
+   
+<body class="bg">
+
+    <ul class>
+        <li><a href="index.html">BERANDA</a></li>
+        <li><a href="kategori.html">PRODUK</a></li>
+        <li><a href="contact.html">LAYANAN</a></li>
+        <li><a href="masuk.html" class="active">LOGIN</a></li>
+        <li><a href="daftar.html">REGISTER</a></li>
+    </ul>
+
+    <div class="navbar">
+        <div class="nav"></div>
+    </div>
+
+    <script src="file-js/script.js"></script>
+
+    <div class="container">
+        <h1>Login</h1>
+        <form>
+            <label>Username</label><br>
+            <input type="text"><br>
+            <label>Password</label><br>
+            <input type="password"><br>
+        </form>
+        <!-- <center><a href="beranda.html" class="link-button">Log in</a></center> -->
+        <button onclick="window.location.href='index.html',alert('Anda berhasil login')">Log in</button>
+    </div>
+
+</body>
+
+</html>

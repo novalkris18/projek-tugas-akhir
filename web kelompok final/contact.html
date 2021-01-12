@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>FashionLok</title>
+    <link rel="shortcut icon" href="foto/LogoFL.png">
+
+    <style>
+        .bg {
+            margin: 0;
+            font-family: Verdana, sans-serif; font-size:0.8em;
+            background-color: rgb(137, 157, 187);
+            background-image: url("foto/gb_kontak.jpg");
+            height: 50%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .contact-form {
+            width: 85%;
+            max-width: 600px;
+            background: #fafafa;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 30px 40px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 20px #000000b3;
+            font-family: "Montserrat",sans-serif;
+        }
+        
+        .contact-form h1 {
+            margin-top: 0;
+            font-weight: 200;
+        }
+
+        .txtb {
+            border: 1px solid gray;
+            margin: 8px 0;
+            padding: 12px 18px;
+            border-radius: 8px;
+        }
+
+        .txtb label {
+            display: block;
+            text-align: left;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .txtb input,.txtb textarea {
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 18px;
+            margin-top: 6px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #008cba;
+            padding: 14px 0;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 8px;
+            width: 100%;
+        }
+
+        ul {
+            height: 50px;
+            width: 100%;
+            padding: 0px;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            z-index: 1; 
+        }
+
+        ul li {
+            float: left;
+            line-height: 50px;
+            list-style: none;
+            padding: 1px;
+            width: 130px;
+        }
+
+        ul li a {
+            color: #ccc;
+            text-shadow: 0 0 3px #000;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        .navbar {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .nav {
+            height: 50px;
+            width: 8000px;
+            background-image: linear-gradient(to right, green 0%, blue 20%, red 40%, yellow 60%, green 80%, blue 100%);
+            animation: warna 25s linear infinite;
+        }
+
+        @keyframes warna {
+            0% {
+                transform: translate(-6500px, 0);
+            }
+            20% {
+                transform: translate(-4000px, 0);
+            }
+            50% {
+                transform: translate(-2500px, 0);
+            }
+            75% {
+                transform: translate(-1000px, 0);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg">
+
+    <ul class>
+        <li><a href="index.html">BERANDA</a></li>
+        <li><a href="kategori.html">PRODUK</a></li>
+        <li><a href="contact.html"class="active">LAYANAN</a></li>
+        <li><a href="masuk.html">LOGIN</a></li>
+        <li><a href="daftar.html">REGISTER</a></li>
+    </ul>
+
+    <div class="navbar">
+        <div class="nav"></div>
+    </div>
+    
+    <div class="contact-form"> 
+        <h1>Hubungi Kami</h1>
+        <div class="txtb">
+            <label>Nama Lengkap :</label>
+            <input type="text" name="" value="" placeholder="Tulis Nama disini...">
+        </div>
+      
+        <div class="txtb">
+            <label>Email :</label>
+            <input type="email" name="" value="" placeholder="Tulis Email disini...">
+        </div>
+      
+        <div class="txtb">
+            <label>Nomor HP :</label>
+            <input type="text" name="" value="" placeholder="Tulis Nomor HP disini...">
+        </div>
+      
+        <div class="txtb">
+            <label>Pesan :</label>
+            <textarea></textarea>
+        </div>
+          <a class="btn">Kirim</a>
+    </div>
+
+</body>
+
+</html>
